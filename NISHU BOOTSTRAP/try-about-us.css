@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+body > .container-fluid{
+    background-color: rgba(165, 165, 165, 0.486);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}

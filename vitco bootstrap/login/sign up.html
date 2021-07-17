@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact V17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/3b40233f01.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<!--===============================================================================================-->
+<style>
+    /*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+    @font-face {
+        font-family: Poppins-Regular;
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-Medium;
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-Bold;
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-SemiBold;
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+    }
+
+    @font-face {
+        font-family: Montserrat-Bold;
+        src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+    }
+
+
+    /*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body,
+    html {
+        height: 100%;
+        font-family: Poppins-Regular, sans-serif;
+    }
+
+    /*---------------------------------------------*/
+    a {
+        font-family: Poppins-Regular;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #666666;
+        margin: 0px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+    }
+
+
+    a:focus {
+        outline: none !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    /*---------------------------------------------*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0px;
+    }
+
+    p {
+        font-family: Poppins-Regular;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #666666;
+        margin: 0px;
+    }
+
+    ul,
+    li {
+        margin: 0px;
+        list-style-type: none;
+    }
+
+
+    /*---------------------------------------------*/
+    input {
+        outline: none;
+        border: none;
+    }
+
+    textarea {
+        outline: none;
+        border: none;
+    }
+
+    textarea:focus,
+    input:focus {
+        border-color: transparent !important;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #adadad;
+    }
+
+    input:-moz-placeholder {
+        color: #adadad;
+    }
+
+    input::-moz-placeholder {
+        color: #adadad;
+    }
+
+    input:-ms-input-placeholder {
+        color: #adadad;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #adadad;
+    }
+
+    textarea:-moz-placeholder {
+        color: #adadad;
+    }
+
+    textarea::-moz-placeholder {
+        color: #adadad;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #adadad;
+    }
+
+    /*---------------------------------------------*/
+    button {
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    iframe {
+        border: none !important;
+    }
+
+    /*//////////////////////////////////////////////////////////////////
+[ utility ]*/
+
+    /*==================================================================
+[ Text ]*/
+    .txt1 {
+        font-family: Poppins-Regular;
+        font-size: 35px;
+        line-height: 1.2;
+        color: #fff;
+        font-weight: 800;
+
+    }
+
+    .txt2 {
+        font-family: Poppins-Regular;
+        line-height: 1.6;
+        color: #999999;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .txt3 {
+        font-family: Poppins-Regular;
+        font-size: 15px;
+        line-height: 1.6;
+        font-size: 20px;
+        color: rgb(109, 140, 153);
+        cursor: pointer;
+    }
+
+    /*==================================================================
+[ Size ]*/
+    .size1 {
+        width: 355px;
+        max-width: 100%;
+    }
+
+    .size2 {
+        width: calc(100% - 43px);
+    }
+
+
+    /*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+    .container-contact100 {
+        width: 100%;
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: #f2f2f2;
+
+    }
+
+    .wrap-contact100 {
+        width: 1120px;
+        background: #fff;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: row-reverse;
+
+    }
+
+    /*==================================================================
+[ Contact more ]*/
+    .contact100-more {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+        padding: 30px 15px 0px 15px;
+    }
+
+    .contact100-more::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+
+
+    /*==================================================================
+[ Form ]*/
+
+    .contact100-form {
+        width: 50%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 56px 55px 63px 55px;
+    }
+
+    .contact100-form-title {
+        width: 100%;
+        display: block;
+        font-family: Poppins-Regular;
+        font-size: 30px;
+        color: #333333;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 33px;
+    }
+
+
+
+    /*------------------------------------------------------------------
+[ Input ]*/
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border: 1px solid #e6e6e6;
+    }
+
+    .rs1-wrap-input100,
+    .rs2-wrap-input100 {
+        width: 50%;
+    }
+
+    .rs2-wrap-input100 {
+        border-left: none;
+    }
+
+    .label-input100 {
+        font-family: Poppins-Regular;
+        font-size: 12px;
+        color: #555555;
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 55px;
+        border: 1px solid #e6e6e6;
+        border-bottom: none;
+        padding: 10px 25px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-Regular;
+        font-size: 18px;
+        color: #666666;
+        line-height: 1.2;
+        padding: 0 25px;
+    }
+
+    input.input100 {
+        height: 55px;
+    }
+
+
+    textarea.input100 {
+        min-height: 139px;
+        padding-top: 19px;
+        padding-bottom: 15px;
+    }
+
+    /*---------------------------------------------*/
+
+    .focus-input100 {
+        position: absolute;
+        display: block;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: -1px;
+        left: -1px;
+        pointer-events: none;
+        border: 1px solid #007aff;
+
+        visibility: hidden;
+        opacity: 0;
+
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+
+        -webkit-transform: scaleX(1.1) scaleY(1.3);
+        -moz-transform: scaleX(1.1) scaleY(1.3);
+        -ms-transform: scaleX(1.1) scaleY(1.3);
+        -o-transform: scaleX(1.1) scaleY(1.3);
+        transform: scaleX(1.1) scaleY(1.3);
+    }
+
+    .input100:focus+.focus-input100 {
+        visibility: visible;
+        opacity: 1;
+
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+
+
+    /*------------------------------------------------------------------
+[ Button ]*/
+    .container-contact100-form-btn {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 23px;
+    }
+
+    .contact100-form-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 200px;
+        height: 50px;
+        border-radius: 2px;
+        background: #007aff;
+
+        font-family: Montserrat-Bold;
+        font-size: 12px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .contact100-form-btn:hover {
+        background: #005dc0;
+    }
+
+
+
+    /*------------------------------------------------------------------
+[ Responsive ]*/
+
+    @media (max-width: 992px) {
+        .contact100-form {
+            width: 60%;
+            padding: 56px 30px 63px 30px;
+        }
+
+        .contact100-more {
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact100-form {
+            width: 100%;
+        }
+
+        .contact100-more {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .contact100-form {
+            padding: 56px 15px 63px 15px;
+        }
+
+        .rs1-wrap-input100,
+        .rs2-wrap-input100 {
+            width: 100%;
+        }
+
+        .rs2-wrap-input100 {
+            border-left: 1px solid #e6e6e6;
+            border-top: none;
+        }
+    }
+
+
+    /*------------------------------------------------------------------
+[ Alert validate ]*/
+
+    .validate-input {
+        position: relative;
+    }
+    #loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(229, 239, 241) url("https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif") no-repeat center;
+  background-size: 10%;
+  z-index: 999999;
+}
+
+    .alert-validate::before {
+        content: attr(data-validate);
+        position: absolute;
+        max-width: 70%;
+        background-color: #fff;
+        border: 1px solid #c80000;
+        border-radius: 2px;
+        padding: 4px 25px 4px 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 2px;
+        pointer-events: none;
+
+        font-family: Poppins-Regular;
+        color: #c80000;
+        font-size: 13px;
+        line-height: 1.4;
+        text-align: left;
+
+        visibility: hidden;
+        opacity: 0;
+
+        -webkit-transition: opacity 0.4s;
+        -o-transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+    }
+
+    .alert-validate::after {
+        content: "\f12a";
+        font-family: FontAwesome;
+        display: block;
+        position: absolute;
+        color: #c80000;
+        font-size: 16px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 8px;
+    }
+
+    .alert-validate:hover:before {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @media (max-width: 992px) {
+        .alert-validate::before {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    @media (max-width: 775px) {
+        body > div > div > form > div.form-check{
+width: 100%;        }
+    }
+
+    body>div>div>div.contact100-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    body>div>div>form>div.form-check {
+        text-align: center;
+    }
+
+    body>div>div>form>div.form-check {
+        margin-top: 3vh;
+    }
+
+</style>
+
+
+<body onload="loadfun()">
+    <div id="loading"></div>
+
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    <a href="../vitco main/VITCO.html"><img style="margin-top: -5vh;" src="../../images/vitco old.png" height="105vh" width="130vw"
+                        alt><br></a>
+                    Sign Up
+
+                </span>
+                <label class="label-input100" for="first-name">Enter Your Name</label>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                    <input id="first-name" class="input100" type="text" name="First-Name" placeholder="First name">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                    <input class="input100" type="text" name="Last-Name" placeholder="Last name">
+                    <span class="focus-input100"></span>
+                </div>
+
+
+                <label class="label-input100" for="email">Enter Your Contact Us</label>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Eg.+91 8887776665">
+                    <span class="focus-input100"></span>
+                </div>
+
+
+
+                <label class="label-input100" for="email">Enter Your Email</label>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@gmail.com">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="phone">Enter Your PassWord</label>
+                <div class="wrap-input100">
+                    <input id="phone" class="input100" type="text" name="phone" placeholder="">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                        By Clicking Create Account, You Agree To Our <br> <a href=""
+                            style="font-size: 20px; text-decoration: none; color: #007aff; cursor: pointer;">Terms</a>
+                        And Have Read And Acknowledge Our <a href=""
+                            style="font-size: 20px; text-decoration: none; color: #007aff; cursor: pointer;">Privacy
+                            <br> Statements </a>
+                    </label>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        Create Account
+                    </button>
+                </div>
+            </form>
+            <div class="container contact100-more d-md-inline-block d-sm-none"
+                style="background-image: url('https://st3.depositphotos.com/35530942/37682/v/950/depositphotos_376824262-stock-illustration-online-registration-sign-concept-young.jpg')">
+                <div class="row">
+                    <div class="col">
+
+                        <span class="txt1 p-b-20">
+                            &nbsp; &nbsp;&nbsp;&nbsp; Login With
+                        </span>
+                    </div>
+                    <div class="col-7">
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i style="color: white;" class="fab fa-google fa-2x"></i></a> 
+                        &nbsp; &nbsp;
+                         <a href="https://en-gb.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fcampaign%2Flanding.php%3Fcampaign_id%3D1653993517%26extra_1%3Ds%257Cc%257C355887219965%257Ce%257Cfacebook%2Bsign%2Bin%257C%26placement%26creative%3D355887219965%26keyword%3Dfacebook%2Bsign%2Bin%26partner_id%3Dgooglesem%26extra_2%3Dcampaignid%253D1653993517%2526adgroupid%253D63066388443%2526matchtype%253De%2526network%253Dg%2526source%253Dnotmobile%2526search_or_content%253Ds%2526device%253Dc%2526devicemodel%253D%2526adposition%253D%2526target%253D%2526targetid%253Dkwd-4265269489%2526loc_physical_ms%253D9303720%2526loc_interest_ms%253D%2526feeditemid%253D%2526param1%253D%2526param2%253D"><i style="color:white" class="fab fa-facebook-square fa-2x"></i></a>
+                    </div>
+                    <div class="col">
+                        <p style="color: #e6e6e6; font-size: 20px;"> <br> Already Have An Account? <a style="color: #007aff; text-decoration: none; font-size: 20px;" href="sign in.html">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dropDownSelect1"></div>
+
+            <script>
+                Loading= document.getElementById("loading");
+              
+                function loadfun(){
+                  loading.style.display="none"
+                }
+              </script>
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                      AOS.init();
+                    </script>
+
+</body>
+
+</html>

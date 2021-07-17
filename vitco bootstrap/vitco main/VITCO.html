@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="vitco.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3b40233f01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/3b40233f01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;700&display=swap">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+<body onload="loadfun()">
+  <div id="loading"></div>
+  <!-- loader endd -->
+
+
+
+
+
+  <!-- background image -->
+  <div class="bg" id="first-sec">
+    <div class="text-and-button">
+      <h1>Highly Reliable And <br>Efficient Dairy Equipments</h1>
+      <a href="../contact-us/contact-us.html"><button class="btn btn-primary">Enquire Now</button></a>
+    </div>
+    <div class="alpha"></div>
+    <div class="video-conatainer">
+      <video autoplay loop muted controlsList="nodownload">
+        <source src="../../images/webbbbb_2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <!-- background imaghe end -->
+
+
+
+
+
+  <!-- side nav bar shuru -->
+  <nav class="main-menu">
+    <ul>
+      <li style="background-color: rgb(247,247,247)">
+        <img id="nav-logo" class="ps-5 ms-2" src="../../images/vitco old.png" alt="" height="80px" width="160px">
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-home fa-lg"></i>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="../login/sign up.html">
+          <i class="fa fa-user fa-lg"></i>
+          <span class="nav-text">Sign Up</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="../contact-us/contact-us.html">
+          <i class="fa fa-envelope-o fa-lg"></i>
+          <span class="nav-text">Contact</span>
+        </a>
+      </li>
+
+      <li id="categoreis-but">
+        <i class="fa fa-bitcoin fa-lg"></i>
+        <a href="#categories">
+          <span class="nav-text">CATEGORIES</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="../products/milking machines/milking-machines.html">
+          <i class="fa fa-shopping-cart fa-lg"></i>
+          <span class="nav-text">PRODUCTS</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="../jobs/jobs.html">
+          <i class="fa fa-arrow-right fa-lg"></i>
+          <span class="nav-text">APPLY FOR JOB</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa fa-question"></i>
+          <span class="nav-text">FAQs</span>
+        </a>
+      </li>
+      <li>
+
+        <a href="../blog,videos,images/blog.html">
+          <i class="fa fa-blog fa-lg"></i>
+          <span class="nav-text">Blogs</span>
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <i class="fa fa-plus fa-lg"></i>
+          <span class="nav-text">FOLLOW US</span>
+        </a>
+      </li>
+
+
+        
+    </ul>
+
+    <ul class="logout">
+      <li>
+        <a href="#">
+          <i class="fa fa-sign-out-alt fa-lg"></i>
+          <span class="nav-text">
+            LOG OUT
+          </span>
+
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- side nav b ar endd -->
+
+
+
+
+
+  <!-- doooosra nav bar for pphone -->
+  <nav class="nav">
+    <a href="#" class="nav__link">
+      <i class="fas fa-shopping-cart fa-lg mb-2 mt-1"></i>
+      <span class="nav__text">Cart</span>
+    </a>
+    <a href="#" class="nav__link nav__link--active">
+      <i class="material-icons nav__icon">person</i>
+      <span class="nav__text">Profile</span>
+    </a>
+    <a href="#" class="nav__link">
+      <i class="fab fa-product-hunt fa-lg mt-1 mb-2"></i>
+      <span class="nav__text">Products</span>
+    </a>
+    <a href="../contact-us/contact-us.html" class="nav__link">
+      <i class="fas fa-envelope fa-lg mt-1 mb-2"></i>
+      <span class="nav__text">Contact</span>
+    </a>
+    <a class="nav__link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+      <i style="transform: translateY(-9px);" class="fa fa-bars fa-lg mt-3"></i>
+      <span style="transform: translateY(-12px);" class="nav__text mb-1">Menu</span>
+    </a>
+    <div style="height: 60%; width: 100%; z-index: 1000000;" class="offcanvas offcanvas-bottom second-nav"
+      id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+
+        <ul style="text-align: center; background-color: white;">
+          <li><img style="margin-left: 20px; border-bottom: 1px solid black;" src="../../images/vitco old.png"
+              height="100px" alt=""></li>
+          <li style="margin-top: 10px;"><a href="../login/sign up.html">Sign Up</a></li>
+          <li><a href="#apply-for-job">Apply For Job</a></li>
+          <li><a href="">Categories</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Follow Us</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Log Out</a></li>
+        </ul>
+        <button style="position: relative; right: vw; top: -21vh; align-self: auto;" type="button"
+          class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- doooosra nav bar for pphone end -->
+
+
+
+
+
+
+
+  <!-- STart OF CATEGORIES -->
+  <sectionc id="categories">
+    <div class="container categories-section" data-aos= "zoom-out">
+      <div class="row d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
+          <p style="font-family: var(--bs-font-sans-serif); font-size: 34px; color: #007aff; ">
+            Categories</p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="section-separator-3-categories"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <a href="../products/milking machines/milking-machines.html">
+          <div id="card-1" class="col-md-3 col-sm-6 mt-5">
+            <div class="card h-100">
+              <img src="../../images/ITEM O0 2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MILK MACHINES</h5>
+
+              </div>
+            </div>
+        </a>
+      </div>
+      <div id="card-2" class="col-md-3 col-sm-6 mt-5">
+        <div class="card h-100">
+          <img src="../../images/ITEM NO. 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MILK CANS</h5>
+          </div>
+        </div>
+      </div>
+      <div id="card-3" class="col-md-3 col-sm-6 mt-5">
+        <div class="card h-100">
+          <img src="../../images/ITEM NO 3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MILK STORAGE TANKS</h5>
+          </div>
+        </div>
+      </div>
+      <div id="card-4" class="col-md-3 col-sm-6 mt-5">
+        <div class="card h-100">
+          <img style="margin-right: -10vh;" src="../../images/ITEM NO 4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MILK COOLER</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </section>
+    <hr>
+    <!-- END OF CATEGORIES -->
+
+
+
+
+
+
+    <!-- gallery section starrt-->
+    <div id="gallery-sec" class="container gallery-section"    data-aos="fade-up">
+      <div class="row">
+        <div class="col text-center">
+          <h1 style="font-family: var(--bs-font-sans-serif); font-size: 34px; color: #007aff; "> Gallery</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="section-separator-2-gallery"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md mt-5 mb-5">
+          <div id="gallery-img-1">
+            <div class="card">
+              <img src="../../images/gallery-img-1.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md mt-5 mb-5">
+          <div id="gallery-img-2">
+            <div class="card">
+              <img src="../../images/gallery-img-2.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md mt-5 mb-5">
+          <div id="gallery-img-3">
+            <div class="card">
+              <img src="../../images/gallery-img-3.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <a style="text-align: center; text-decoration: none; font-family: var(--bs-font-sans-serif); font-size: 22px; color: #007aff;"
+          href="../blog,videos,images/blog.html"> View More</a>
+      </div>
+    </div>
+    <hr><br><br><br><br><br>
+    <!-- gallery enddd -->
+
+
+
+
+
+
+
+    <!-- videos start -->
+    <div id="videos-sec" class="container video-section" data-aos="zoom-in-down">
+      <div class="row">
+        <div class="col d-flex justify-content-center mb-5">
+          <p style="font-family: var(--bs-font-sans-serif); font-size: 34px; color: #007aff; "> Videos</p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="section-separator-1"></span>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-5 d-flex justify-content-center">
+          <video style="border-radius: 20px;" width="500vw" height="300vh" controls controlsList="nodownload">
+            <source src="../../images/milk 1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-md-6 mb-5 d-flex justify-content-center">
+          <video style="border-radius: 20px;" width="500vw" height="300vh" controls controlsList="nodownload">
+            <source src="../../images/milk 2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-5 d-flex justify-content-center">
+          <video style="border-radius: 20px;" width="500vw" height="300vh" controls controlsList="nodownload">
+            <source src="../../images/milk 4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-md-6 mb-5 d-flex justify-content-center">
+
+          <video style="border-radius: 20px;" width="500vw" height="300vh" controls controlsList="nodownload">
+            <source src="../../images/miljk 3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center mb-5">
+        <a style="font-family: var(--bs-font-sans-serif); text-decoration: none; font-size: 22px; color: #007aff;"
+          href="../blog,videos,images/blog.html"> View More</a>
+      </div>
+    </div>
+    <hr>
+    <!-- video ends -->
+
+
+
+
+
+
+
+    <!-- about us start -->
+    <div id="about-us-sec" class="container about-us-section"  data-aos="zoom-in-right">
+      <div style="border: 1px solid rgb(204, 204, 204); border-radius: 10px;" class="row">
+        <div class="col-lg-4 mt-5 d-flex justify-content-center">
+          <img src="../../images/about us img.jpg" alt="">
+        </div>
+
+
+        <div class=" col-lg-8 text-center mt-5">
+          <h1 style="font-family: var(--bs-font-sans-serif); font-size: 34px; color: #007aff; ">About Us</h1>
+          <div class="col">
+            <span class="section-separator-4-about-us"></span>
+          </div>
+          <p class="mt-4" style="font-size: 20px;">Vitco brings believe and creativity to dairy products<br> and help
+            customers to enjoy the best
+            sevices all over India<br> Our indrustry is a manufacturing indrustry<br>of dairy products .The company also
+            has an integrated
+            <br> logistics business in which it provides transportation <br> and services to customers for their dairy
+            projects. <br>Our technologically advanced machines are efficient, safe and easy to use. <br>We also ensure
+            that all our products are of the highest quality
+        </div>
+
+      </div>
+    </div>
+    <hr style="margin-top: 15vh; margin-bottom: -10vh;">
+    <!-- about us endd -->
+
+
+
+
+
+
+
+    <!-- testimonial start -->
+    <section id="testimonials-sec" data-aos="zoom-out-up">>
+      <div class="container-fluid">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <span class="section-separator"></span>
+        </div>
+      </div>
+      <div class="testimonials-carousel-wrap">
+        <!-- <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+      <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div> -->
+        <div class="testimonials-carousel">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar"><img src="../../images/21.jpg"></div>
+                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                  <div class="testimonials-text">
+                    <div class="listing-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book.</p>
+                    <a href="#" class="text-link"></a>
+                    <div class="testimonials-avatar">
+                      <h3>John Doe</h3>
+                      <h4>Owner</h4>
+                    </div>
+                  </div>
+                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                </div>
+              </div>
+
+              <!--second--->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar"><img src="../../images/3.jpg"></div>
+                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                  <div class="testimonials-text">
+                    <div class="listing-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book.</p>
+                    <a href="#" class="text-link"></a>
+                    <div class="testimonials-avatar">
+                      <h3>Doe Boe</h3>
+                      <h4>Director</h4>
+                    </div>
+                  </div>
+                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                </div>
+              </div>
+              <!--third-->
+
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar"><img src="../../images/4.jpg"></div>
+                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                  <div class="testimonials-text">
+                    <div class="listing-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book.</p>
+                    <a href="#" class="text-link"></a>
+                    <div class="testimonials-avatar">
+                      <h3>Boe Doe</h3>
+                      <h4>Developer</h4>
+                    </div>
+                  </div>
+                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                </div>
+              </div>
+
+              <!--fourth-->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar"><img src="../../images/3.jpg"></div>
+                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                  <div class="testimonials-text">
+                    <div class="listing-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book.</p>
+                    <a href="#" class="text-link"></a>
+                    <div class="testimonials-avatar">
+                      <h3>Doe John</h3>
+                      <h4>Designer</h4>
+                    </div>
+                  </div>
+                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                </div>
+              </div>
+              <!--testi end-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-pagination"></div>
+      </div>
+    </section>
+    <!-- testimonial end -->
+
+
+
+
+
+
+
+
+    <!-- job opportunities -->
+    <div class="container-fluid"  data-aos="fade-right">>
+      <div class="row">
+        <div class="offset-md-1 col">
+          <h1 id="job-text-1">Find The Career</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-1 col">
+          <h2 id="job-text-2">You Deserve</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-1 col-11">
+          <h3 id="job-text-3">Your Job Start With Search <br> But Ends With Us</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div style=" height: 50vh;" class="col-6 offset-6 d-flex justify-content-end">
+
+          <img src="../../images/jobb.png" id="job-img" class="img-fluid" alt=" image">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- search barr -->
+
+    <div id="job-search"  class="col-md-6 offset-md-1" data-aos="fade-left">>
+      <a href="../jobs/jobs.html"><button class="search-domain btn btn-primary px-5 pt-2">View Available
+          Jobs</button></a>
+    </div>
+    </div>
+    </div>
+    <br><br><br><br><br>
+    <br>
+    <br><br><br><br><br>
+    <br>
+
+    <!-- job opportunities end -->
+
+
+
+
+
+
+    <!-- footer starts here -->
+    <div style="background-color: #f1f1f1; padding-top: 9vh;" id="footer">
+    <div style="width: 85vw;" class="container-fluid">
+      <div class="row">
+        <div class="offset-1 col-lg-2">
+          <a href="#first-sec"><img style="margin-top: -20px;" src="../../images/vitco old.png" height="100px" alt=""></a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente deserunt numquam.</p><br>
+          <p><i class="far fa-copyright fa-lg"></i> 2021 VITCO. All Rights Reserved</p><br><br>
+        </div>
+        <div class="offset-1 col-lg-2">
+          <h4>EXPLORE </h4>
+          <a class="footer-explore" href="#first-sec">HOME</a><br>
+          <a class="footer-explore" href="#categories">CATEGORIES</a><br>
+          <a class="footer-explore" href="#gallery-sec">GALLERY</a><br>
+          <a class="footer-explore" href="#videos-sec">VIDEOS</a><br>
+          <a class="footer-explore" href="#about-us-sec">ABOUT US</a><br>
+          <a class="footer-explore" href="#testimonials-sec">TESTIMONIALS</a><br>
+          <a class="footer-explore" href="../jobs/jobs.html">JOB OPPORTUNITIES</a><br><br><br>
+        </div>
+        <div class="offset-lg-0 offset-1 col-lg-2">
+          <h4>VISIT</h4>
+          <a style="text-decoration: none;" href="https://www.google.com/maps/place/VIJAY+TRADING+COMPANY/@27.2032367,78.0411605,17z/data=!3m1!4b1!4m5!3m4!1s0x39747154dc40f36b:0x6c7ae4121f560f88!8m2!3d27.2031792!4d78.0431888">Shiv Priya Complex, Shop No. LG 28, Firozabad Road,<br> Rambagh,
+            Agra, Uttar Pradesh 282006
+            </span></a><br><br><br>
+          <h4>CONTACT US</h4>
+          <a style="text-decoration: none;" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlLWxsGGjkXtTBjmtrcQDNlNwmrzvdChbJWtMNNHvggLbBXmTDSxNLGjPshdnLlJLhznNV">E-Mail: vitcoindia@gmail.com</a><br>
+          <a style="text-decoration: none;" href="">+91 9412673358</a><br>
+          <a style="text-decoration: none;" href="">+91 9917673301</a><br><br><br>
+        </div>
+        <div class="offset-lg-0 offset-1 col-lg-2">
+          <h4>FOLLOW</h4>
+          <div class="col-lg-2 ">
+            <a href="https://www.instagram.com/we_vitco/?hl=en"><i style="color:rgb(184, 60, 184);" class="fab fa-instagram fa-lg mb-2">Instagram</i></a>
+          </div>
+          <div class="col-lg-1">
+            <a href="https://m.facebook.com/profile.php?id=100005453194826"><i style="color: #4267B2;" class="fab fa-facebook fa-lg mb-2">Facebook</i></a>
+          </div>
+          <div class="col-lg-1">
+            <a href=""><i style="color: rgb(0, 204, 255)" class="fab fa-twitter fa-lg mb-2">Twitter</i></a>
+          </div>
+          <div class="col-lg-1">
+            <a href=""><i style="color: rgb(0, 160, 0);" class="fab fa-whatsapp fa-lg">Whatsapp</i><br><br><br></a>
+          </div>
+        </div>
+        <div class="offset-lg-0 offset-1 col-lg-2">
+          <h4>LEGAL</h4>
+          <a style="text-decoration: none; font-size: 20px;" href="">Terms & Conditions</a><br>
+          <a style="text-decoration: none; font-size: 20px;" href="">Privacy</a><br><br><br><br><br>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- fotter end -->
+
+
+
+    <script>
+      function loadfun() {
+        document.getElementById("loading").style.display = "none";
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="vitco-script.js"></script>
+<script>
+  Loading= document.getElementById("loading");
+
+  function loadfun(){
+    loading.style.display="none"
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

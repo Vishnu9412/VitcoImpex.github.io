@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b40233f01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3b40233f01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;700&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../vitco main/vitco.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative
+        }
+
+        .padding {
+            padding: 10rem !important
+        }
+
+        .domain-form .form-group {
+            padding: 20px
+        }
+
+        .domain-form .form-group input {
+            height: 70px !important;
+            border: transparent
+        }
+
+        .form-control {
+            height: 52px !important;
+
+            color: #3a4348 !important;
+            font-size: 18px;
+            border-radius: 0px;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important
+        }
+
+        .px-4 {
+            padding-left: 1.5rem !important
+        }
+
+        .domain-price span {
+            color: #3a4348;
+            margin: 0 10px
+        }
+
+        .domain-price span small {
+            color: #16a085;
+        }
+
+        .domain-form-1 {
+            width: 70vw;
+            margin-left: -10vw;
+        }
+
+
+
+        /* table */
+
+
+        table {
+            border-collapse: collapse;
+            width: 400%;
+            height: 200px;
+            border: 1px solid #bdc3c7;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        tr {
+            transition: all .2s ease-in;
+            cursor: pointer;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #header {
+            background-color: #3094ff;
+            color: #fff;
+        }
+
+        h1 {
+            font-weight: 600;
+            text-align: center;
+            background-color: #007aff;
+            color: #fff;
+            padding: 10px 0px;
+        }
+
+        .table-data:hover {
+            background-color: #f5f5f5;
+            transform: scale(1.02);
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        }
+        #loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(229, 239, 241) url("https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif") no-repeat center;
+  background-size: 10%;
+  z-index: 999999;
+}
+
+        @media screen and (max-width: 768px) {
+            body>div.container-fluid.d-flex.justify-content-md-center>div>div.col-md-2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            body>div.container-fluid.d-flex.justify-content-md-center>div>div.col-md-2>input {
+                height: 50px;
+                margin-top: 10px;
+            }
+
+            table {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 9990px) {
+            body>div.container-fluid.d-flex.justify-content-md-center>div>div.col-md-2>input {
+                height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+            .post-available {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body>div:nth-child(7)>div>div>div:nth-child(2)>label {
+                margin-left: -100vw;
+            }
+        }
+    </style>
+    </head>
+
+    <body onload="loadfun()">
+        <div id="loading"></div>
+
+
+
+
+
+        <!-- side nav bar shuru -->
+        <nav class="main-menu">
+            <ul>
+                <li style="background-color: rgb(247,247,247)">
+                    <img id="nav-logo" class="ps-5 ms-2" src="../../images/vitco old.png" alt="" height="80px"
+                        width="160px">
+                </li>
+                <li>
+                    <a href="../vitco main/VITCO.html">
+                        <i class="fa fa-home fa-lg"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../login/sign up.html">
+                        <i class="fa fa-user fa-lg"></i>
+                        <span class="nav-text">Sign Up</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact-us/contact-us.html">
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../products/milking machines/milking-machines.html">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        <span class="nav-text">PRODUCTS</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-question"></i>
+                        <span class="nav-text">FAQs</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">FOLLOW US</span>
+                    </a>
+                </li>
+
+                <li>
+
+                    <a href="../blog,videos,images/blog.html">
+                        <i class="fa fa-blog fa-lg"></i>
+                        <span class="nav-text">Blogs</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sign-out-alt fa-lg"></i>
+                        <span class="nav-text">
+                            LOG OUT
+                        </span>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- side nav b ar endd -->
+
+
+
+
+
+        <!-- doooosra nav bar for pphone -->
+        <nav class="nav">
+            <a href="#" class="nav__link">
+                <i class="fas fa-shopping-cart fa-lg mb-2 mt-1"></i>
+                <span class="nav__text">Cart</span>
+            </a>
+            <a href="#" class="nav__link nav__link--active">
+                <i class="material-icons nav__icon">person</i>
+                <span class="nav__text">Profile</span>
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fab fa-product-hunt fa-lg mt-1 mb-2"></i>
+                <span class="nav__text">Products</span>
+            </a>
+            <a href="../contact-us/contact-us.html" class="nav__link">
+                <i class="fas fa-envelope fa-lg mt-1 mb-2"></i>
+                <span class="nav__text">Contact</span>
+            </a>
+            <a class="nav__link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
+                <i style="transform: translateY(-9px);" class="fa fa-bars fa-lg mt-3"></i>
+                <span style="transform: translateY(-12px);" class="nav__text mb-1">Menu</span>
+            </a>
+            <div style="height: 60%; width: 100%; z-index: 1000000;" class="offcanvas offcanvas-bottom second-nav"
+                id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+
+                    <ul style="text-align: center; background-color: white;">
+                        <li><img style="margin-left: 20px; border-bottom: 1px solid black;"
+                                src="../../images/vitco old.png" height="100px" alt=""></li>
+                        <li style="margin-top: 10px;"><a href="" style="display: none;"></a></li>
+                        <li><a href="" style="display: none;"></a></li>
+                        <li><a href="" style="display: none;"></a></li>
+                        <li><a href="../login/sign up.html">Sign Up</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a style="color: white;" href="">Log Out</a></li>
+                    </ul>
+                    <button style="position: relative; right: vw; top: -21vh; align-self: auto;" type="button"
+                        class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- doooosra nav bar for pphone end -->
+
+
+
+
+
+
+
+
+        <div class="container-fluid d-flex justify-content-center mt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 style="font-size: 50px;">10,569 Jobs Listed Here</h2><br><br>   
+                </div>
+                <div class="col-12 text-center">
+                    <h4 style="font-size: 30px;" > Your Dream Job Is Waiting For You</h4><br><br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid d-flex justify-content-md-center">
+            <div class="row">
+                <div class="col-md-5">
+                    <input style="border: 1px solid #007aff; " type="text" class="form-control px-4"
+                        placeholder="Job Title">
+                </div>
+                <div class="col-md-5">
+                    <input style="border: 1px solid #007aff; " type="text" class="form-control px-4"
+                        placeholder="Location">
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" class="search-domain btn btn-primary px-5"
+                        value="Find Job"><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="conatiner-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1>Latest Jobs</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- table -->
+        <div class="container">
+            <div class="row mb-md-5 mt-md-5 ms-lg-1">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Front-End-Developer</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">INR 1,80,000 - INR 3,40,000</h3>
+                            <p style="font-size: 20px;" class="card-text">We Want A Developer Who Can Develope Front End
+                                Of A Website Much More Than Common</p>
+                            <a href=""><button class="btn btn-primary">Apply Now!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Front-End-Developer</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">INR 1,80,000 - INR 3,40,000</h3>
+                            <p style="font-size: 20px;" class="card-text">We Want A Developer Who Can Develope Front End
+                                Of A Website Much More Than Common</p>
+                            <a href=""><button class="btn btn-primary">Apply Now!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row mt-5 mb-5 ms-lg-1j7 ~!@#WAE^SZq">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Front-End-Developer</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">INR 1,80,000 - INR 3,40,000</h3>
+                            <p style="font-size: 20px;" class="card-text">We Want A Developer Who Can Develope Front End
+                                Of A Website Much More Than Common</p>
+                            <a href=""><button class="btn btn-primary">Apply Now!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Front-End-Developer</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">INR 1,80,000 - INR 3,40,000</h3>
+                            <p style="font-size: 20px;" class="card-text">We Want A Developer Who Can Develope Front End
+                                Of A Website Much More Than Common</p>
+                            <a href=""><button class="btn btn-primary">Apply Now!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer starts here -->
+        <div style="background-color: #f1f1f1; padding-top: 9vh;" id="footer">
+            <div style="width: 85vw;" class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-lg-2">
+                        <a href="#first-sec"><img style="margin-top: -20px;" src="../../images/vitco old.png"
+                                height="100px" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente deserunt numquam.</p>
+                        <br>
+                        <p><i class="far fa-copyright fa-lg"></i> 2021 VITCO. All Rights Reserved</p><br><br>
+                    </div>
+                    <div class="offset-1 col-lg-2">
+                        <h4>EXPLORE </h4>
+                        <a class="footer-explore" href="../vitco main/VITCO.html">HOME</a><br>
+                        <a class="footer-explore" href="../blog,videos,images/blog.html">BLOG</a><br>
+
+                    </div>
+                    <div class="offset-lg-0 offset-1 col-lg-2">
+                        <h4>VISIT</h4>
+                        <a style="text-decoration: none;"
+                            href="https://www.google.com/maps/place/VIJAY+TRADING+COMPANY/@27.2032367,78.0411605,17z/data=!3m1!4b1!4m5!3m4!1s0x39747154dc40f36b:0x6c7ae4121f560f88!8m2!3d27.2031792!4d78.0431888">Shiv
+                            Priya Complex, Shop No. LG 28, Firozabad Road,<br> Rambagh,
+                            Agra, Uttar Pradesh 282006
+                            </span></a><br><br><br>
+                        <h4>CONTACT US</h4>
+                        <a style="text-decoration: none;"
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlLWxsGGjkXtTBjmtrcQDNlNwmrzvdChbJWtMNNHvggLbBXmTDSxNLGjPshdnLlJLhznNV">E-Mail:
+                            vitcoindia@gmail.com</a><br>
+                        <a style="text-decoration: none;" href="">+91 9412673358</a><br>
+                        <a style="text-decoration: none;" href="">+91 9917673301</a><br><br><br>
+                    </div>
+                    <div class="offset-lg-0 offset-1 col-lg-2">
+                        <h4>FOLLOW</h4>
+                        <div class="col-lg-2 ">
+                            <a href="https://www.instagram.com/we_vitco/?hl=en"><i style="color:rgb(184, 60, 184);"
+                                    class="fab fa-instagram fa-lg mb-2">Instagram</i></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href="https://m.facebook.com/profile.php?id=100005453194826"><i style="color: #4267B2;" class="fab fa-facebook fa-lg mb-2">Facebook</i></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href=""><i style="color: rgb(0, 204, 255)"
+                                    class="fab fa-twitter fa-lg mb-2">Twitter</i></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href=""><i style="color: rgb(0, 160, 0);"
+                                    class="fab fa-whatsapp fa-lg">Whatsapp</i><br><br><br></a>
+                        </div>
+                    </div>
+                    <div class="offset-lg-0 offset-1 col-lg-2">
+                        <h4>LEGAL</h4>
+                        <a style="text-decoration: none; font-size: 20px;" href="">Terms & Conditions</a><br>
+                        <a style="text-decoration: none; font-size: 20px;" href="">Privacy</a><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fotter end -->
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+        <script>
+            Loading= document.getElementById("loading");
+          
+            function loadfun(){
+              loading.style.display="none"
+            }
+          </script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                  AOS.init();
+                </script>
+
+    </body>
+
+</html>
